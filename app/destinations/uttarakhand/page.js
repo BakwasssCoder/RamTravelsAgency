@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import { generateWhatsAppUrl, generateBookingMessage } from '../../../lib/whatsapp';
 
-export default function KedarnathDestination() {
+export default function UttarakhandDestination() {
   const [bookingForm, setBookingForm] = useState({
-    service: 'Kedarnath Special Package',
+    service: 'Uttarakhand Tour Package',
     city: '',
-    destination: 'Kedarnath',
+    destination: 'Uttarakhand',
     date: '',
-    vehicle: 'SUV',
+    vehicle: 'Innova',
     passengers: '1',
     name: '',
     email: '',
@@ -34,42 +34,42 @@ export default function KedarnathDestination() {
 
   const placesToVisit = [
     {
-      name: 'Kedarnath Temple',
-      description: 'The main shrine dedicated to Lord Shiva, located at an altitude of 3,583 meters in the Himalayas.'
+      name: 'Nainital',
+      description: 'Famous for its beautiful lake and scenic beauty, known as the "Lake District of India".'
     },
     {
-      name: 'Bhairavnath Temple',
-      description: 'Located 1 km from Kedarnath Temple, this temple is dedicated to Lord Bhairav, the guardian of Kedarnath.'
+      name: 'Mussoorie',
+      description: 'A popular hill station known for its panoramic views of the Himalayas and colonial architecture.'
     },
     {
-      name: 'Gaurikund',
-      description: 'The base point for the trek to Kedarnath Temple, known for its hot water springs.'
+      name: 'Rishikesh',
+      description: 'Known as the "Yoga Capital of the World" and the "Gateway to the Garhwal Himalayas".'
     },
     {
-      name: 'Triyuginarayan',
-      description: 'The place where Lord Shiva and Goddess Parvati are believed to have gotten married.'
+      name: 'Haridwar',
+      description: 'One of the seven holiest places in Hinduism, known for the Ganga Aarti ceremony.'
     }
   ];
 
   const packageInclusions = [
-    'Comfortable accommodation for 4 nights and 5 days',
+    'Comfortable accommodation for 6 nights and 7 days',
     'All meals (breakfast, lunch, dinner) during the tour',
-    'Transportation from Haridwar/Rishikesh to Gaurikund',
-    'Stay at Gaurikund and Kedarnath',
+    'Transportation in a comfortable Innova/Tempo Traveller',
     'Experienced tour guide and driver',
     'All applicable taxes and government fees',
-    'First aid kit and oxygen cylinder',
-    'Helicopter option (optional, extra cost)'
+    'Sightseeing as per itinerary',
+    'Welcome drink on arrival',
+    'Yoga session in Rishikesh (optional)'
   ];
 
   const packageExclusions = [
-    'Airfare to and from Haridwar/Rishikesh',
+    'Airfare to and from Delhi',
     'Personal expenses and tips',
     'Insurance and medical emergencies',
     'Any item not mentioned in inclusions',
     'Camera fees at monuments',
     'Lunch and dinner on travel days',
-    'Helicopter fare (if opted)'
+    'Adventure activities (if not opted)'
   ];
 
   return (
@@ -80,10 +80,10 @@ export default function KedarnathDestination() {
           <div className="row justify-content-center py-5">
             <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
               <h1 className="display-3 text-white mb-3 animated slideInDown">
-                Kedarnath Special
+                Uttarakhand Tour
               </h1>
               <p className="fs-4 text-white mb-4 animated slideInDown">
-                Visit the revered Kedarnath Temple amidst the majestic Himalayas
+                Discover the spiritual and scenic beauty of Uttarakhand
               </p>
             </div>
           </div>
@@ -96,16 +96,16 @@ export default function KedarnathDestination() {
           <div className="row g-5">
             <div className="col-lg-8">
               <div className="mb-5">
-                <h2 className="mb-4">Kedarnath Special Package</h2>
+                <h2 className="mb-4">Uttarakhand Tour Package</h2>
                 <p className="mb-4">
-                  Experience the divine aura of Lord Shiva at the Kedarnath Temple, one of the twelve Jyotirlingas. 
-                  Our Kedarnath Special package offers a comfortable and hassle-free pilgrimage experience with 
-                  all necessary arrangements for a memorable spiritual journey.
+                  Explore the natural beauty and spiritual significance of Uttarakhand with our comprehensive tour package. 
+                  From the serene lakes of Nainital to the yoga capital of Rishikesh and the holy city of Haridwar, 
+                  experience the diverse landscapes and rich culture of this Himalayan state.
                 </p>
                 <p className="mb-4">
-                  Located at an altitude of 3,583 meters in the Himalayas, Kedarnath Temple is part of the Chardham 
-                  Yatra but can also be visited as a standalone pilgrimage. The temple is open only during the summer 
-                  months (April to November) due to heavy snowfall in the region.
+                  Uttarakhand is known for its hill stations, ancient temples, and spiritual significance. 
+                  Our package covers the most popular destinations including Nainital, Mussoorie, Rishikesh, and Haridwar, 
+                  offering a perfect blend of sightseeing, spirituality, and relaxation.
                 </p>
               </div>
 
@@ -114,16 +114,16 @@ export default function KedarnathDestination() {
                 <h3 className="mb-4">Tour Gallery</h3>
                 <div className="row g-3">
                   <div className="col-6">
-                    <img src="/assets/img/Kedarnath.jpeg" alt="Kedarnath Temple" className="img-fluid rounded" />
+                    <img src="/assets/img/Uttarakhand.jpg" alt="Uttarakhand View" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/chardham.jpeg" alt="Kedarnath View" className="img-fluid rounded" />
+                    <img src="/assets/img/chardham.jpeg" alt="Nainital" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/Uttarakhand.jpg" alt="Mountain View" className="img-fluid rounded" />
+                    <img src="/assets/img/Kedarnath.jpeg" alt="Rishikesh" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/Himachal.jpeg" alt="Pilgrims" className="img-fluid rounded" />
+                    <img src="/assets/img/Himachal.jpeg" alt="Haridwar" className="img-fluid rounded" />
                   </div>
                 </div>
               </div>
@@ -187,9 +187,9 @@ export default function KedarnathDestination() {
                 </div>
                 <div className="card-body">
                   <div className="mb-4">
-                    <h5 className="text-primary">₹12,999</h5>
+                    <h5 className="text-primary">₹16,999</h5>
                     <p className="mb-0">Per Person</p>
-                    <p className="text-muted">5 Days / 4 Nights</p>
+                    <p className="text-muted">7 Days / 6 Nights</p>
                   </div>
                   
                   <form onSubmit={handleBookingSubmit}>

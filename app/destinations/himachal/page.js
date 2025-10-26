@@ -114,16 +114,16 @@ export default function HimachalDestination() {
                 <h3 className="mb-4">Tour Gallery</h3>
                 <div className="row g-3">
                   <div className="col-6">
-                    <img src="/assets/img/destination-3.jpg" alt="Himachal View" className="img-fluid rounded" />
+                    <img src="/assets/img/Himachal.jpeg" alt="Himachal View" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/package-3.jpg" alt="Shimla" className="img-fluid rounded" />
+                    <img src="/assets/img/chardham.jpeg" alt="Shimla" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/destination-4.jpg" alt="Manali" className="img-fluid rounded" />
+                    <img src="/assets/img/Uttarakhand.jpg" alt="Manali" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/destination-1.jpg" alt="Hill Station" className="img-fluid rounded" />
+                    <img src="/assets/img/Kedarnath.jpeg" alt="Hill Station" className="img-fluid rounded" />
                   </div>
                 </div>
               </div>

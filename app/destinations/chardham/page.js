@@ -113,16 +113,16 @@ export default function ChardhamDestination() {
                 <h3 className="mb-4">Tour Gallery</h3>
                 <div className="row g-3">
                   <div className="col-6">
-                    <img src="/assets/img/destination-1.jpg" alt="Chardham Yatra" className="img-fluid rounded" />
+                    <img src="/assets/img/chardham.jpeg" alt="Chardham Yatra" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/package-1.jpg" alt="Chardham Temple" className="img-fluid rounded" />
+                    <img src="/assets/img/Kedarnath.jpeg" alt="Chardham Temple" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/destination-2.jpg" alt="Himalayan View" className="img-fluid rounded" />
+                    <img src="/assets/img/Uttarakhand.jpg" alt="Himalayan View" className="img-fluid rounded" />
                   </div>
                   <div className="col-6">
-                    <img src="/assets/img/package-2.jpg" alt="Pilgrims" className="img-fluid rounded" />
+                    <img src="/assets/img/Himachal.jpeg" alt="Pilgrims" className="img-fluid rounded" />
                   </div>
                 </div>
               </div>

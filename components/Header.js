@@ -219,6 +219,9 @@ export default function Header() {
               <Link href="/contact" className="nav-item nav-link" onClick={() => setIsMenuOpen(false)}>
                 Contact Us
               </Link>
+              <Link href="/reviews" className="nav-item nav-link" onClick={() => setIsMenuOpen(false)}>
+                Reviews
+              </Link>
             </div>
             <Link 
               href="https://wa.me/919155969543" 

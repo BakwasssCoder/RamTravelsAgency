@@ -212,7 +212,7 @@ function HomeContent() {
                   >
                     <img
                       className="img-fluid"
-                      src="assets/img/destination-1.jpg"
+                      src="assets/img/chardham.jpeg"
                       alt="Chardham Yatra"
                     />
                     <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
@@ -230,7 +230,7 @@ function HomeContent() {
                   >
                     <img
                       className="img-fluid"
-                      src="assets/img/destination-2.jpg"
+                      src="assets/img/Kedarnath.jpeg"
                       alt="Kedarnath"
                     />
                     <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
@@ -248,7 +248,7 @@ function HomeContent() {
                   >
                     <img
                       className="img-fluid"
-                      src="assets/img/destination-3.jpg"
+                      src="assets/img/Himachal.jpeg"
                       alt="Himachal Pradesh"
                     />
                     <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
@@ -264,19 +264,19 @@ function HomeContent() {
             <div className="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style={{ minHeight: 350 }}>
               <Link
                 className="position-relative d-block h-100 overflow-hidden"
-                href="/destinations/international"
+                href="/destinations/uttarakhand"
               >
                 <img
                   className="img-fluid position-absolute w-100 h-100"
-                  src="assets/img/destination-4.jpg"
-                  alt="International Tours"
+                  src="assets/img/Uttarakhand.jpg"
+                  alt="Uttarakhand Tours"
                   style={{ objectFit: 'cover' }}
                 />
                 <div className="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                  International
+                  Spiritual
                 </div>
                 <div className="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                  Global Tours
+                  Uttarakhand
                 </div>
               </Link>
             </div>

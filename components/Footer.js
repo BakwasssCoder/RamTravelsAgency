@@ -17,6 +17,9 @@ export default function Footer() {
             <Link className="btn btn-link" href="/contact">
               Contact Us
             </Link>
+            <Link className="btn btn-link" href="/reviews">
+              Customer Reviews
+            </Link>
             <Link className="btn btn-link" href="/privacy-policy">
               Privacy Policy
             </Link>
@@ -127,6 +130,7 @@ export default function Footer() {
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/contact">Contact</a>
+                <a href="/reviews">Reviews</a>
                 <a href="/privacy-policy">Privacy Policy</a>
                 <a href="/terms-conditions">Terms & Conditions</a>
               </div>

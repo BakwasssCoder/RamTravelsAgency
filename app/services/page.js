@@ -221,6 +221,42 @@ export default function Services() {
         </div>
       </div>
 
+      {/* Stats Section */}
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="row g-4">
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="text-center border rounded p-4">
+                <i className="fa fa-3x fa-car text-primary mb-3"></i>
+                <h2 className="mb-1" data-toggle="counter-up">28+</h2>
+                <p className="mb-0">Cities</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="text-center border rounded p-4">
+                <i className="fa fa-3x fa-users text-primary mb-3"></i>
+                <h2 className="mb-1" data-toggle="counter-up">100</h2>
+                <p className="mb-0">K+ Happy Customers</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div className="text-center border rounded p-4">
+                <i className="fa fa-3x fa-bus text-primary mb-3"></i>
+                <h2 className="mb-1" data-toggle="counter-up">200</h2>
+                <p className="mb-0">Commercial Cards</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div className="text-center border rounded p-4">
+                <i className="fa fa-3x fa-car text-primary mb-3"></i>
+                <h2 className="mb-1" data-toggle="counter-up">100</h2>
+                <p className="mb-0">Luxury Cars</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Services Grid */}
       <DynamicLazyLoad 
         height="auto"
