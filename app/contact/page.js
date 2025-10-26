@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { generateWhatsAppMessage, redirectToWhatsApp } from '../../lib/whatsapp';
+import { openWhatsAppChat, generateBookingMessage } from '../../lib/whatsapp';
 import { DynamicLazyLoad } from '../../lib/dynamicImports';
 
 export default function Contact() {
@@ -24,15 +24,15 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const message = `Hello Ram Travels India,
-I would like to get in touch with you.
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Service Interested: ${formData.service}
-Message: ${formData.message}`;
-
-    redirectToWhatsApp(encodeURIComponent(message));
+    const bookingDetails = {
+      service: formData.service,
+      name: formData.name,
+      email: formData.email,
+      specialRequest: `Phone: ${formData.phone}\nMessage: ${formData.message}`
+    };
+    
+    const message = generateBookingMessage(bookingDetails);
+    openWhatsAppChat(message);
   };
 
   // Placeholder for lazy loading
