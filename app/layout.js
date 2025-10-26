@@ -1,9 +1,4 @@
 import '../styles/globals.css';
-import '../public/assets/css/bootstrap.min.css';
-import '../public/assets/css/style.css';
-import '../public/assets/lib/animate/animate.min.css';
-import '../public/assets/lib/owlcarousel/assets/owl.carousel.min.css';
-import '../public/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css';
 import { Inter, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import { DynamicHeader } from '../lib/dynamicImports';
@@ -38,6 +33,28 @@ export default function RootLayout({ children }) {
         />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />
+        
+        {/* External CSS */}
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="/assets/css/style.css"
+          rel="stylesheet"
+        />
+        <link
+          href="/assets/lib/animate/animate.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="/assets/lib/owlcarousel/assets/owl.carousel.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
           rel="stylesheet"
         />
       </head>

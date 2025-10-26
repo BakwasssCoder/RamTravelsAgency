@@ -21,6 +21,16 @@ const nextConfig = {
   httpAgentOptions: {
     keepAlive: true,
   },
+  // Handle CSS files properly
+  webpack: (config) => {
+    // Handle CSS files in public directory
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader'],
+    });
+    
+    return config;
+  },
 };
 
 module.exports = nextConfig;
