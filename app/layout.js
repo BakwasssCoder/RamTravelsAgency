@@ -6,8 +6,15 @@ import { DynamicFooter } from '../lib/dynamicImports';
 import { registerServiceWorker } from '../lib/serviceWorker';
 import { startPerformanceMonitoring } from '../lib/performanceReport';
 
-const inter = Inter({ subsets: ['latin'] });
-const playfair = Playfair_Display({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
 
 export const metadata = {
   title: 'Ram Travels India - Car Rentals & Tour Packages',
@@ -58,7 +65,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.className} ${playfair.className} flex flex-col min-h-screen`}>
+      <body className="flex flex-col min-h-screen">
         {/* Spinner */}
         <div id="spinner" className="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
           <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
