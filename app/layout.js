@@ -5,6 +5,7 @@ import { DynamicHeader } from '../lib/dynamicImports';
 import { DynamicFooter } from '../lib/dynamicImports';
 import { registerServiceWorker } from '../lib/serviceWorker';
 import { startPerformanceMonitoring } from '../lib/performanceReport';
+import { DynamicMap } from '../lib/dynamicImports';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
         <main className="flex-grow">
           {children}
         </main>
+        <DynamicMap />
         <DynamicFooter />
         
         {/* JavaScript Libraries */}

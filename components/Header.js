@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
+import { initWOW, cleanupWOWStyles } from '../lib/wow';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,10 +45,13 @@ export default function Header() {
   // Initialize WOW.js and other jQuery functionality after component mounts
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Initialize WOW.js for animations
-      if (window.WOW) {
-        new window.WOW().init();
-      }
+      // Clean up any existing WOW.js styles to prevent hydration issues
+      cleanupWOWStyles();
+      
+      // Initialize WOW.js for animations with a small delay to ensure all scripts are loaded
+      const timeoutId = setTimeout(() => {
+        initWOW();
+      }, 100);
       
       // Handle dropdown hover effects
       const handleDropdownHover = () => {
@@ -91,6 +95,7 @@ export default function Header() {
       
       // Cleanup
       return () => {
+        clearTimeout(timeoutId);
         if (window.$) {
           window.$(window).off('scroll');
         }

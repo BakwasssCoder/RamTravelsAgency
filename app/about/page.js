@@ -130,7 +130,13 @@ export default function About() {
                   journey comfortable, memorable, and hassle-free.
                 </p>
               </div>
-              <div className="bg-gray-200 h-96 rounded-xl"></div>
+              <div>
+                <img 
+                  src="assets/img/about page.jpeg" 
+                  alt="About Ram Travels India" 
+                  className="w-full h-96 object-cover rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </section>
