@@ -1,0 +1,38 @@
+{
+  "app\\page.js -> ../components/FareEstimator": {
+    "id": "app\\page.js -> ../components/FareEstimator",
+    "files": [
+      "static/chunks/_app-pages-browser_components_FareEstimator_js-_af160.js"
+    ]
+  },
+  "lib\\dynamicImports.js -> ../components/FareEstimator": {
+    "id": "lib\\dynamicImports.js -> ../components/FareEstimator",
+    "files": [
+      "static/chunks/_app-pages-browser_components_FareEstimator_js-_af161.js"
+    ]
+  },
+  "lib\\dynamicImports.js -> ../components/Footer": {
+    "id": "lib\\dynamicImports.js -> ../components/Footer",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Footer_js.js"
+    ]
+  },
+  "lib\\dynamicImports.js -> ../components/Header": {
+    "id": "lib\\dynamicImports.js -> ../components/Header",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Header_js.js"
+    ]
+  },
+  "lib\\dynamicImports.js -> ../components/LazyImage": {
+    "id": "lib\\dynamicImports.js -> ../components/LazyImage",
+    "files": [
+      "static/chunks/_app-pages-browser_components_LazyImage_js.js"
+    ]
+  },
+  "lib\\dynamicImports.js -> ../components/LazyLoad": {
+    "id": "lib\\dynamicImports.js -> ../components/LazyLoad",
+    "files": [
+      "static/chunks/_app-pages-browser_components_LazyLoad_js.js"
+    ]
+  }
+}
